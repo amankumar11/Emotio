@@ -45,6 +45,16 @@
 
 }
 
+#dashboardbtn{
+    background-color: #19052D;
+}
+#aboutusbtn{
+    background-color: #3B304C;
+}
+#logoutbtn{
+    background-color: #3B304C;
+}
+
 .dashboard{
     background-color: #19052D;
 }
