@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+.left-nav{
+    height: 100vh;
+    background-color: #3B304C;
+    padding: 0;
+}
+
+.left-nav div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.user-details{
+    margin-top: 100px;
+}
+
+.user-details p{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.buttons button{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background-color: #19052D;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    border: none;
+
+}
+
+.dashboard{
+    background-color: #19052D;
+}
+
+.top-songs{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 40%;
+    color: white;
+}
+
+.top-songs h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.top-list-songs{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-list-songs p{
+    margin-bottom: 0px;
+}
+
+.top-list-songs a{
+    background-color: #1db954;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    color: white;
+    margin-left: 35%;
+    margin-bottom: 5px;
+}
+
+hr{
+    color: white;
+    margin-top: 0px;
+}
+
+.chart{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: white;
+}
+
+.chart h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.chart-area{
+    width: 70%;
+}
