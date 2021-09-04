@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/style.css')}}"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 left-nav">
+          <div>
+            <div class="user-details">
+              <img src="   {{url_for('static',filename='assets/1_rUGkQgEBgwP8dqyIr83NOQ.png')}} "        width="150pxx" />
+              <p>Aviato</p>
+            </div>
+            <div class="buttons">
+              <button id="dashboardbtn">Dashboard</button>
+              <button id="aboutusbtn">About Us</button>
+              <button id="logoutbtn">Log Out</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 dashboard">
+          <div class="row">
+            <div class="col-6 top-songs">
+              <h2>Top Songs</h2>
+              <div class="top-list">
+                <div class="top-list-songs">
+                  <p>1. Without Me - Halsey</p>
+                  <a>Play</a>
+                </div>
+                <hr />
+                <div class="top-list-songs">
+                  <p>2. Circles - Post Malone</p>
+                  <a>Play</a>
+                </div>
+                <hr />
+                <div class="top-list-songs">
+                  <p>3. Memories - Maroon 5</p>
+                  <a>Play</a>
+                </div>
+                <hr />
+                <div class="top-list-songs">
+                  <p>4. Wolves - Selena Gomez</p>
+                  <a>Play</a>
+                </div>
+                <hr />
+                <div class="top-list-songs">
+                  <p>5. 2002 - Anne Marie</p>
+                  <a>Play</a>
+                </div>
+                <hr />
+              </div>
+            </div>
+            <div class="col-6 chart">
+              <h2>Mood Chart</h2>
+              <div class="chart-area">
+                <canvas id="pie-chart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src='./data.js'></script> -->
+    <script type="text/javascript">
+          let myChart = document.getElementById("pie-chart").getContext('2d');
+          let log= {{log|safe}};
+
+
+      let massPopChart = new Chart(myChart, {
+          type: 'doughnut', //bar, horizontal-bar, pie, doughnut, line, radar, polarArea
+          data: {
+              labels: ['Happy', 'Sad', 'Angry','Contempt','Surprise'],
+              datasets: [{
+                  label:'mood index',
+                  data: [
+                      log[0],
+                      log[1],log[2],log[3],log[4]
+
+                  ],
+                  //backgroundColor:'green'
+                  backgroundColor:[
+                      '#11052C',
+                      '#3D087B',
+                      '#F43B86',
+                      '#f07881',
+                      '#FFE459'
+
+                  ],
+                  borderWidth:1,
+                  borderColor:'#623b96',
+                  hoverBorderColor:'#623b96',
+                  hoverBorderWidth:4
+
+              }]
+          },
+          options:{}
+      });
+    </script>
+    <script type="text/javascript">
+      const dashboardbtn = document.getElementById('dashboardbtn')
+      const aboutusbtn = document.getElementById('aboutusbtn')
+      const logoutbtn = document.getElementById('logoutbtn')
+
+      dashboardbtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        dashboardbtn.style.backgroundColor = '#19052D'
+        aboutusbtn.style.backgroundColor = '#3B304C'
+        logoutbtn.style.backgroundColor = '#3B304C'
+      })
+
+      aboutusbtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        aboutusbtn.style.backgroundColor = '#19052D'
+        dashboardbtn.style.backgroundColor = '#3B304C'
+        logoutbtn.style.backgroundColor = '#3B304C'
+      })
+    </script>
+    <!-- <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='assets/css/style.css')}}"
+      type="text/css"
+    /> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
