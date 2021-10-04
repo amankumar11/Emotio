@@ -1,5 +1,5 @@
 
-#<center> EmotiỘ </center> #
+# <center> EmotiỘ </center> #
 
 ![EmotioỘ](./static/assets/emotio.jpg)
 
