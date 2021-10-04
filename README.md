@@ -6,6 +6,10 @@
 
 ### Intelligent emotion recognition and music recommendation ##
 
+<img align = center src="https://img.shields.io/github/issues/amankumar11/Dashboard-Chartjs?style=plastic">
+<img align =center src="https://img.shields.io/docker/automated/amankumar11/Dashboard-Chartjs">
+<img align = center src="https://img.shields.io/github/issues-raw/amankumar11/Dashboard-Chartjs">
+
 ### Run Locally
 
 Clone the project
