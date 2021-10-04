@@ -5,9 +5,9 @@ import webbrowser
 import threading
 app = Flask(__name__)
 
-# emotionVAl=val()
+emotionVAl=val()
 
-emotionVAl=[1,1,1,1,0]
+# emotionVAl=[1,1,1,1,0]
 
 
 
@@ -42,7 +42,7 @@ def appRUN():
 
         print('\r'+progressMeter, end='')
         time.sleep(0.2)
-
+       
         progressMeter += '#'
         if progressMeter == completionMeter:
             break
@@ -51,7 +51,7 @@ def appRUN():
 def openWindow():
     time.sleep(5)
     webbrowser.open_new('http://127.0.0.1:5000/')
-
+ 
 t1 = threading.Thread(target=appRUN)
 # t2 = threading.Thread(target=openWindow)
 t1.start()

@@ -18,14 +18,16 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  pip install -r req.py
+  pip install -r requirements.txt
 ```
 
 Start the server
 
 ```bash
+    export PYTHONPATH=’/emotio/src/’
     python3 backend.py
 ```
+> Export commands make modules in different directory available to the other files
 
   
 
