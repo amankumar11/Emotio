@@ -1,7 +1,12 @@
 
-# CLI for emotion recognition #
+#<center> EmotiỘ </center> #
 
-## Run Locally
+![EmotioỘ](./static/assets/emotio.jpg)
+
+
+### Intelligent emotion recognition and music recommendation ##
+
+### Run Locally
 
 Clone the project
 
@@ -30,8 +35,13 @@ Start the server
 > Export commands make modules in different directory available to the other files
 
   
+---
 
-## Screenshots
+<details>
+<summary> <strong><font size="+2"> Screenshots </font></strong/></summary>
+  <br>
+  
+
 
 ![App Screenshot](/static/assets/ss1.png)
 
@@ -41,11 +51,13 @@ Start the server
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-  
-## Tech Stack
+</details> 
 
-**Client:** tailwind
+--- 
+### Dependencies 
 
-**Server:** python3 , flask, open-cv 
+**Client:** `tailwind`
+
+**Server:** `python3`, ` flask`, `open-cv` 
 
   
