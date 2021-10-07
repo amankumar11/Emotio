@@ -2,7 +2,7 @@ import os
 import time
 import cv2
 from face_api import *
-from maxValEmotion import *
+from emotion_value import *
 
 
 def emomtionRet(path, param):

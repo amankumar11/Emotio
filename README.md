@@ -10,8 +10,12 @@
 <img align =center src="https://img.shields.io/docker/automated/amankumar11/Dashboard-Chartjs">
 <img align = center src="https://img.shields.io/github/issues-raw/amankumar11/Dashboard-Chartjs">
 
-### Run Locally
 
+---
+
+
+> :warning: Manual Build works only on Linux  OS !
+### Run Locally
 Clone the project
 
 ```bash
@@ -33,10 +37,8 @@ Install dependencies
 Start the server
 
 ```bash
-    export PYTHONPATH=’/emotio/src/’
     python3 backend.py
 ```
-> Export commands make modules in different directory available to the other files
 
   
 ---

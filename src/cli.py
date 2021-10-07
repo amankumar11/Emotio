@@ -4,17 +4,14 @@ import cv2
 import sys
 from flask import Flask, render_template, url_for,redirect
 from face_api import *
-from maxValEmotion import *
-from checkVid import *
+from emotion_value import *
+from video_verify import *
 import glob
 import enquiries
 
 app = Flask(__name__)
 
-
-
-
-def checkImage(path):
+def checkImage(path): # function to check if the opened file is valid or not 
     if path=='':
         return
     ext = os.path.splitext(path)
@@ -26,34 +23,9 @@ def checkImage(path):
             " \033[44m \033[01m   incorrect extension given " + ext[1])
 
 
-print('''\033[92m \033[01m
-          _____          
-         /\    \         
-        /::\____\        
-       /::::|   |        \033[93m
-      /:::::|   |        
-     /::::::|   |        
-    /:::/|::|   |        
-   /:::/ |::|   |        
-  /:::/  |::|___|______  
- /:::/   |::::::::\    \ \033[91m
-/:::/    |:::::::::\____\
-\::/    / ~~~~~/:::/    /
- \/____/      /:::/    / 
-             /:::/    /  
-            /:::/    /   
-           /:::/    /    
-          /:::/    /     
-         /:::/    /      \033[96m
-        /:::/    /       
-        \::/    /        
-         \/____/ agnus  
-
-
-                    \033[0m     
-''')
-
+os.system(" cat ./static/assets/logo.txt | lolcat") # outputs the magnus logo
 sys.stdout.flush()
+
 
 parser = argparse.ArgumentParser(
     prog='PROG', usage='%(prog)s [options]',

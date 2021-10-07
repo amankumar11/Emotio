@@ -6,7 +6,7 @@ import threading
 app = Flask(__name__)
 
 emotionVAl=val()
-
+sys.path.insert(1, './src/')
 # emotionVAl=[1,1,1,1,0]
 
 
