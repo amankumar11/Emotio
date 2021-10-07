@@ -24,7 +24,7 @@ docker pull holychicken99/emotio:0.1
 #### For Linux ####
 
 ```bash
-docker run -it --device /dev/video0 holychicken99/emotio:0.1 
+docker run -it -p 5000:5000 --device /dev/video0 holychicken99/emotio:0.1 
 ```
 ---
 > :warning: Manual Build works only on Linux  OS !
