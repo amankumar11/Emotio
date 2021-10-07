@@ -12,13 +12,26 @@
 
 
 ---
+## Docker  ##
+
+> pull from docker registry
 
 
+```bash  
+docker pull holychicken99/emotio:0.1
+```
+### To run 
+#### For Linux ####
+
+```bash
+docker run -it --device /dev/video0 holychicken99/emotio:0.1 
+```
+---
 > :warning: Manual Build works only on Linux  OS !
 ### Run Locally
 Clone the project
 
-```bash
+```bashD
   git clone https://link-to-project
 ```
 
