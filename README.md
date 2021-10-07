@@ -22,9 +22,15 @@ docker pull holychicken99/emotio:0.1
 ```
 ### To run 
 #### For Linux ####
-
+> supports webcam feed on linux
 ```bash
 docker run -it -p 5000:5000 --device /dev/video0 holychicken99/emotio:0.1 
+```
+
+#### For Windows ####
+
+```bash 
+docker run -it -p 5000:5000  holychicken99/emotio:0.1
 ```
 ---
 > :warning: Manual Build works only on Linux  OS !
